@@ -67,6 +67,15 @@ namespace CleanArchitectrure.Infrastructure.Redis
             return value.ToObject<T>();
         }
 
+        public bool TryGetValue<T>(string key, out T result) where T : class
+        {
+            string value = _database.StringGet(key);
+
+            result = value.ToObject<T>();
+
+            return result != null;
+        }
+
         public string Get(string key)
         {
             return _database.StringGet(key);
@@ -83,5 +92,7 @@ namespace CleanArchitectrure.Infrastructure.Redis
         {
             _database.KeyDelete(key);
         }
+
+        
     }
 }

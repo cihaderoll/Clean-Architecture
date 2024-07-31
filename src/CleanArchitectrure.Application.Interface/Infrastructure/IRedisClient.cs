@@ -20,6 +20,8 @@ namespace CleanArchitectrure.Application.Interface.Infrastructure
 
         T Get<T>(string key) where T : class;
 
+        bool TryGetValue<T>(string key, out T result) where T : class;
+
         string Get(string key);
 
         Task<T> GetAsync<T>(string key) where T : class;

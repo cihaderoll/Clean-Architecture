@@ -2,7 +2,7 @@
 using CleanArchitectrure.Domain.Entities;
 using CleanArchitectrure.Persistence.Contexts;
 
-namespace CleanArchitectrure.Persistence.Repositories
+namespace CleanArchitectrure.Persistence.Repositories.NonCached
 {
     public class UserRepository(AppDbContext context) : GenericRepository<User>(context), IUserRepository
     {

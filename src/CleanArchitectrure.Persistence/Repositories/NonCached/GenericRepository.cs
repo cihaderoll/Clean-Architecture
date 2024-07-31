@@ -4,7 +4,7 @@ using CleanArchitectrure.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace CleanArchitectrure.Persistence.Repositories
+namespace CleanArchitectrure.Persistence.Repositories.NonCached
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : EntityBase
     {
