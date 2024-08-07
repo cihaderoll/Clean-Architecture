@@ -1,5 +1,6 @@
 ﻿using CleanArchitectrure.Application.Interface.Persistence;
 using CleanArchitectrure.Persistence.Contexts;
+using CleanArchitectrure.Persistence.Repositories.NonCached;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 

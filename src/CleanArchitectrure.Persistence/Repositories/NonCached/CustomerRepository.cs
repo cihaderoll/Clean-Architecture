@@ -6,5 +6,9 @@ namespace CleanArchitectrure.Persistence.Repositories.NonCached
 {
     public class CustomerRepository(AppDbContext context) : GenericRepository<Customer>(context), ICustomerRepository
     {
+        public string DenemeKeyedService()
+        {
+            return "notCached";
+        }
     }
 }

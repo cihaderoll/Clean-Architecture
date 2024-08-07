@@ -9,5 +9,6 @@ namespace CleanArchitectrure.Application.Interface.Persistence
 {
     public interface ICustomerRepository : IGenericRepository<Customer>
     {
+        string DenemeKeyedService();
     }
 }
